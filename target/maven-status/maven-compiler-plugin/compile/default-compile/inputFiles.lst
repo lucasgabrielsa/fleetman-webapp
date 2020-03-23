@@ -1,0 +1,12 @@
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\services\RemoteMicroserviceStubImpl.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\Startup.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\controllers\VehicleController.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\CloudConfiguration.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\data\VehicleRepository.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\services\PositionTrackingExternalService.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\services\RemotePositionMicroserviceCalls.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\TomcatWARApplication.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\FleetmanApplication.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\domain\Vehicle.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\WebSocketConfig.java
+C:\Docker\Chapter 7\fleetman-webapp\src\main\java\com\virtualpairprogrammers\controllers\Position.java
