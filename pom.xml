@@ -176,7 +176,70 @@
 				<configuration>
                 	<mainClass>com.virtualpairprogrammers.TomcatWARApplication</mainClass>
             	</configuration>
-			</plugin>			
+			</plugin>
+
+			<!-- Just add this to the <build><plugins> section of your POM and make changes appropriately -->
+
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+				<version>0.21.0</version>
+
+				<configuration>
+					<!--  <dockerHost>http://127.0.0.1:2375</dockerHost> -->
+					<!--  this is for Mac and Amazon Linux -->
+					<!-- <dockerHost>unix:///var/run/docker.sock</dockerHost> -->
+
+					<verbose>true</verbose>
+
+					<!-- Needed if pushing to DockerHub: preferred to store these in local environment (see the course) -->
+					<!-- the auth data is on settings.xml o m2 folder -->
+
+<!--					<authConfig>-->
+<!--						<username></username>-->
+<!--						<password></password>-->
+<!--					</authConfig>-->
+
+					<images>
+						<image>
+							<name>lucasgabrielsa/fleetman-web-app-maven</name>
+							<build>
+								<dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
+
+								<!--copies Jar to the maven directory (uses Assembly system)-->
+								<assembly>
+									<descriptorRef>artifact</descriptorRef>
+								</assembly>
+								<tags>
+									<tag>latest</tag>
+								</tags>
+							</build>
+						</image>
+					</images>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>build</goal>
+						</goals>
+					</execution>
+					<execution>
+						<id>my-deploy</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>push</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<configuration>
+					<skip>true</skip>
+				</configuration>
+			</plugin>
 		</plugins>
 		
 		<resources>

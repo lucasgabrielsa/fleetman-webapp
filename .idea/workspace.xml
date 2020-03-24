@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0125e7ec-1934-40be-88b5-c370ccc19cab" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/docker/build.timestamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/docker/lucasgabrielsa/fleetman-web-app-maven/build/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/docker/lucasgabrielsa/fleetman-web-app-maven/tmp/docker-build.tar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fleetman-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/fleetman-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.virtualpairprogrammers.FleetmanApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.virtualpairprogrammers.FleetmanApplicationTests.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.virtualpairprogrammers.FleetmanApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.virtualpairprogrammers.FleetmanApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +25,7 @@
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
     </option>
@@ -31,10 +42,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager">
-    <configuration name="fleetman [clean,install]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.fleetman deploy">
+    <configuration name="fleetman [clean,package,docker:push]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -46,7 +60,8 @@
             <option name="goals">
               <list>
                 <option value="clean" />
-                <option value="install" />
+                <option value="package" />
+                <option value="docker:push" />
               </list>
             </option>
             <option name="pomFileName" />
@@ -60,6 +75,36 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="fleetman deploy" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="deploy" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Maven.fleetman [clean,package,docker:push]" />
+      <item itemvalue="Maven.fleetman deploy" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -75,29 +120,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584919279160">
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585068880465">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585068880465" />
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584919279160" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1584931031898">
+    <state width="1877" height="332" key="GridCell.Tab.0.bottom" timestamp="1585068881783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="332" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585068881783" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584931031898" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1584931031898">
+    <state width="1877" height="332" key="GridCell.Tab.0.center" timestamp="1585068881783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="332" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585068881783" />
     <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584931031898" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1584931031898">
+    <state width="1877" height="332" key="GridCell.Tab.0.left" timestamp="1585068881783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="332" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585068881783" />
     <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584931031898" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1584931031898">
+    <state width="1877" height="332" key="GridCell.Tab.0.right" timestamp="1585068881783">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state width="1877" height="332" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585068881783" />
     <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584931031898" />
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584919226691">
+    <state x="440" y="97" key="SettingsEditor" timestamp="1585062173470">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584919226691" />
+    <state x="440" y="97" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585062173470" />
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1584965579900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584965579900" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1585059822570">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1585059822570" />
   </component>
 </project>
